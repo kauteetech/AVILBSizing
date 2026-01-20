@@ -64,6 +64,13 @@
             </svg>
             Sizing Guide
           </a>
+          <a class="nav-link" data-section="logs" onclick="showSection('logs')">
+            <svg viewBox="0 0 36 36" fill="currentColor">
+              <path d="M28 4H8C6.9 4 6 4.9 6 6v24c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM8 30V6h20v24H8z"/>
+              <path d="M10 10h16v2H10zm0 4h16v2H10zm0 4h16v2H10zm0 4h12v2H10z"/>
+            </svg>
+            Calculation Logs
+          </a>
         </div>
       </div>
     </nav>
@@ -652,6 +659,25 @@
                 <li><strong>VRF limit:</strong> Each SE can attach to up to 9 VPCs/VRFs</li>
                 <li><strong>Controller sizing:</strong> Based on number of virtual services and API load</li>
               </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logs Section -->
+        <div id="logs-section" class="hidden">
+          <div class="content-header">
+            <h1>Calculation Logs</h1>
+            <p>Detailed step-by-step breakdown of sizing calculations with explanations</p>
+          </div>
+
+          <div id="logs-content">
+            <div class="alert alert-info">
+              <svg viewBox="0 0 36 36" fill="currentColor">
+                <path d="M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2zm0 30a14 14 0 1 1 14-14 14 14 0 0 1-14 14z"/>
+                <path d="M18 20a1 1 0 0 1-1-1v-6a1 1 0 1 1 2 0v6a1 1 0 0 1-1 1z"/>
+                <circle cx="18" cy="24" r="1"/>
+              </svg>
+              <div>Run a calculation to see detailed logs and explanations of how your Service Units were calculated.</div>
             </div>
           </div>
         </div>
